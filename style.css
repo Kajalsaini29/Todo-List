@@ -1,1 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
+  }
+
+  .todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+
+  .task-text {
+    flex: 1;
+    font-size: 1rem;
+    word-wrap: break-word;
+  }
+
+  .actions {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+  }
+
+  .edit, .delete {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .delete {
+    background: #ff4d4f;
+  }
+
+  .edit:hover {
+    background: #e68900;
+  }
+
+  .delete:hover {
+    background: #cc0000;
+  }
+
+  @media (max-width: 400px) {
+    .actions {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .edit, .delete {
+      width: 100%;
+    }
+  }
